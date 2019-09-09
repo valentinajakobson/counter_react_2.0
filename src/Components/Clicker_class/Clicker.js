@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import './Clicker.css';
 
 class Clicker extends Component {
-
 constructor(props) {
       super(props);
       this.state = {counter: 0};
       this.timesClicked = this.timesClicked.bind(this);
     }
-
 
 timesClicked = (event) => {
   this.setState({counter: this.state.counter+1});
@@ -38,7 +36,6 @@ timesClicked = (event) => {
     this.setState( {counter: 0}
     );
   }
-
 
 render () {
 return (
